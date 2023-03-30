@@ -7,5 +7,9 @@ declare var jQuery:any;
   styleUrls: ['./side-bar.component.css']
 })
 export class SideBarComponent {
+  isMenuOpen!: boolean;
 
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen
+  }
 }
